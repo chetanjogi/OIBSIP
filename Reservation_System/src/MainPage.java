@@ -27,7 +27,6 @@ public class MainPage {
             Statement stmt = con.createStatement();
             stmt.executeUpdate("create database if not exists ReservationDB");
             stmt.executeUpdate("use ReservationDB");
-            stmt.executeUpdate("create table if not exists ticketsdata(pnr int unique not null,firstName varchar(50) not null,lastName varchar(50) not null,age int not null,emailid varchar(50) not null,trainNum int not null,trainName varchar(50) not null,source varchar(50) not null,destination varchar(50) not null,journeyDate DATE not null,classType varchar(50) not null)");
         } catch (Exception e) {
             e.printStackTrace();
         }
